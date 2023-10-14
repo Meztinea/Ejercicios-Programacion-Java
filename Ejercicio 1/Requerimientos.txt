@@ -1,0 +1,18 @@
+Crea un programa en Java que actúe como una calculadora de estadísticas de notas para un grupo de estudiantes. 
+El programa debe permitir al usuario ingresar un número variable de notas de estudiantes y luego realizar las 
+siguientes operaciones:
+
+* Calcular el promedio de las notas ingresadas. LISTO
+* Determinar la nota más alta y la nota más baja. LISTO
+* Contar cuántas notas están por encima del promedio y cuántas están por debajo. LISTO
+* Permitir al usuario ingresar un valor límite (x) y contar cuántas notas están por encima de ese límite. LISTO
+
+El programa debe permitir al usuario que ingrese las notas hasta que decida detenerse. LISTO
+
+Supuestos:
+* Las calificaciones se consideran en un rango de 0 hasta 10. - LISTO
+
+Agregados:
+* Se agrega una opción para poder imprimir todas las calificaciones. - LISTO
+* Se agrega una opción extra para eliminar todas las calificaciones y poder ingresar nuevas. LISTO
+* Al imprimir se comprueba si la lista está vacía, en caso de que esté vacia se muestra el mensaje en pantalla. LISTO
