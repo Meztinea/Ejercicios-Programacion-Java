@@ -1,0 +1,3 @@
+Desarrollar un programa en Java que permita realizar la conversión de grados celsius a farenheit
+
+Fórmula: (0 °C × 9/5) + 32 = 32 °F
