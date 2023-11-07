@@ -2,14 +2,16 @@ package com.meztinea.libreria;
 
 public class Libro {
 
-	private String titulo;
-	private String autor;
-	private String editorial;
+	private final String titulo;
+	private final String autor;
+	private final String editorial;
 	private int ejemplaresDisponibles;
 	
-	// Constructor vacío por defecto
-	public Libro() {
-		
+	// Constructor con tres parámetros
+	public Libro(String titulo, String autor, String editorial) {
+		this.titulo = titulo;
+		this.autor = autor;
+		this.editorial = editorial;
 	}
 	
 	// Constructor con todos los parametros 
@@ -21,18 +23,6 @@ public class Libro {
 	}
 	
 	// Setters
-	public void setTitulo(String titulo) {
-		this.titulo = titulo;
-	}
-	
-	public void setAutor(String autor) {
-		this.autor = autor;
-	}
-	
-	public void setEditorial(String editorial) {
-		this.editorial = editorial;
-	}
-	
 	public void setEjemplaresDisponibles(int ejemplares) {
 		this.ejemplaresDisponibles = ejemplares;
 	}
