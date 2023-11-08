@@ -14,20 +14,12 @@ public class Biblioteca {
 		libro1.setEjemplaresDisponibles(10);
 		
 		// Creando objeto usando constructor con todos los parámetros
-		Libro libro2 = new Libro("Toda la soledad del centro de la tierra","Luis Jorge Boone", "Alfaguara", 12);
+		Libro libro2 = new Libro("Toda la soledad del centro de la tierra","Luis Jorge Boone", "Alfaguara", 0);
 		
 		// Prestando libros
-		try {
-			libro1.prestarLibro();
-		} catch (Exception e) {
-			System.out.println("No hay libros disponibles");
-		}
+		libro1.prestarLibro();
+		libro2.prestarLibro();
 		
-		try {
-			libro2.prestarLibro();
-		} catch (Exception e) {
-			System.out.println("No hay libros disponibles");
-		}
 		
 		
 		//System.out.println(libro1.getTitulo() + " cuenta con " + libro1.getEjemplaresDisponibles() + " ejemplares disponibles");

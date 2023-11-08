@@ -14,6 +14,7 @@ public class Libro {
 		this.editorial = editorial;
 	}
 	
+	// Sobrecarga de constructores
 	// Constructor con todos los parametros 
 	public Libro(String titulo, String autor, String editorial, int ejemplares) {
 		this.titulo = titulo;
@@ -45,8 +46,15 @@ public class Libro {
 	}
 	
 	// Método para prestar un libro - Disminuye la cantidad de ejemplares
+	// Verifica que esxisten libros antes de realizar un préstamo
 	public void prestarLibro() {
-		this.ejemplaresDisponibles--;
+		if (this.ejemplaresDisponibles > 0) {
+			this.ejemplaresDisponibles--;
+			System.out.println("Préstamo exitoso");
+		}
+		else {
+			System.out.println("No hay ejemplares disponibles");
+		}
 	}
 	
 }
