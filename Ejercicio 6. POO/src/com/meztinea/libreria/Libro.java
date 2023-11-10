@@ -1,55 +1,25 @@
 package com.meztinea.libreria;
 
-public class Libro {
+public class Libro extends Material {
 
-	private final String titulo;
-	private final String autor;
-	private final String editorial;
-	private int ejemplaresDisponibles;
 	
 	// Constructor con tres parámetros
 	public Libro(String titulo, String autor, String editorial) {
-		this.titulo = titulo;
-		this.autor = autor;
-		this.editorial = editorial;
+		super(titulo, autor, editorial);
 	}
 	
 	// Sobrecarga de constructores
 	// Constructor con todos los parametros 
 	public Libro(String titulo, String autor, String editorial, int ejemplares) {
-		this.titulo = titulo;
-		this.autor = autor;
-		this.editorial = editorial;
-		this.ejemplaresDisponibles = ejemplares;
+		super(titulo, autor, editorial, ejemplares);
 	}
 	
-	// Setters
-	public void setEjemplaresDisponibles(int ejemplares) {
-		this.ejemplaresDisponibles = ejemplares;
-	}
-	
-	// Getters
-	public String getTitulo() {
-		return this.titulo;
-	}
-	
-	public String getAutor() {
-		return this.autor;
-	}
-	
-	public String getEditorial() {
-		return this.editorial;
-	}
-	
-	public int getEjemplaresDisponibles() {
-		return this.ejemplaresDisponibles;
-	}
 	
 	// Método para prestar un libro - Disminuye la cantidad de ejemplares
 	// Verifica que esxisten libros antes de realizar un préstamo
-	public void prestarLibro() {
-		if (this.ejemplaresDisponibles > 0) {
-			this.ejemplaresDisponibles--;
+	public void prestarEjemplar() {
+		if (getEjemplaresDisponibles() > 0) {
+			setEjemplaresDisponibles(getEjemplaresDisponibles() - 1);
 			System.out.println("Préstamo exitoso");
 		}
 		else {

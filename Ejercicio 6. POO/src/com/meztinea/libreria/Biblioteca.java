@@ -17,17 +17,20 @@ public class Biblioteca {
 		Libro libro2 = new Libro("Toda la soledad del centro de la tierra","Luis Jorge Boone", "Alfaguara", 0);
 		
 		// Prestando libros
-		libro1.prestarLibro();
-		libro2.prestarLibro();
-		
-		
-		
-		//System.out.println(libro1.getTitulo() + " cuenta con " + libro1.getEjemplaresDisponibles() + " ejemplares disponibles");
-		//System.out.println(libro2.getTitulo() + " cuenta con " + libro2.getEjemplaresDisponibles() + " ejemplares disponibles");
-		
+		libro1.prestarEjemplar();
+		libro2.prestarEjemplar();
+
+		// Agregando libros a la biblioteca
 		biblioteca.add(libro1);
 		biblioteca.add(libro2);
 		
+		// Mostrando los libros de la biblioteca
+		mostrarLibros();
+		
+	}
+	
+	
+	public static void mostrarLibros() {
 		int contador = 1;
 		for(Libro libro: biblioteca) {
 			System.out.println("Titulo " + contador + ": " + libro.getTitulo());
@@ -36,6 +39,5 @@ public class Biblioteca {
 			System.out.println("Ejemplares: " + libro.getEjemplaresDisponibles() + "\n");
 			contador++;
 		}
-		
-	}             
+	}
 }
