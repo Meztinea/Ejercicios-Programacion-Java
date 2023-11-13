@@ -20,7 +20,7 @@ public class Libro extends Material {
 	public void prestarEjemplar() {
 		if (getEjemplaresDisponibles() > 0) {
 			setEjemplaresDisponibles(getEjemplaresDisponibles() - 1);
-			System.out.println("Préstamo exitoso");
+			System.out.println("Préstamo de Libro exitoso");
 		}
 		else {
 			System.out.println("No hay ejemplares disponibles");

@@ -25,12 +25,12 @@ public class Biblioteca {
 		biblioteca.add(libro2);
 		
 		// Mostrando los libros de la biblioteca
-		mostrarLibros();
+		mostrarMaterial();
 		
 	}
 	
 	
-	public static void mostrarLibros() {
+	public static void mostrarMaterial() {
 		int contador = 1;
 		for(Libro libro: biblioteca) {
 			System.out.println("Titulo " + contador + ": " + libro.getTitulo());
