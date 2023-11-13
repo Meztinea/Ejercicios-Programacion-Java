@@ -17,6 +17,7 @@ public abstract class Material {
 		this.titulo = titulo;
 		this.autor = autor;
 		this.editorial = editorial;
+		this.ejemplaresDisponibles = 0;
 	}
 	
 	public abstract void prestarEjemplar();
