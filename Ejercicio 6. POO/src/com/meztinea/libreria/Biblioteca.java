@@ -1,5 +1,6 @@
 package com.meztinea.libreria;
 
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 
 public class Biblioteca {
@@ -49,6 +50,16 @@ public class Biblioteca {
 		// Buscando un material (libro o historieta) en la biblioteca
 		buscarMaterial("María");
 		buscarMaterial("Batman");
+		
+		// Creando usuario
+		Usuario user1 = new Usuario("Jorge", "miemail@gmail.com", LocalDateTime.now());
+		
+		
+		// Registrando préstamos en historial de usuario
+		user1.registrarPrestamo(libro1);
+		user1.registrarPrestamo(hist3);
+		
+		user1.mostrarHistorial();
 		
 	}
 	

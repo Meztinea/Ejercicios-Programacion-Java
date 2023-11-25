@@ -11,6 +11,12 @@ public class Usuario {
 	private ArrayList<Material> historialPrestamos = new ArrayList<>(); // Registra los libros o historietas que ha solicitado en préstamo
 	
 	
+	public Usuario(String nombre, String email, LocalDateTime fecha) {
+		this.nombre = nombre;
+		this.email = email;
+		this.fechaRegistro = fecha;
+	}
+	
 	public void setNombre(String nombre) {
 		this.nombre = nombre;
 	}
@@ -38,5 +44,16 @@ public class Usuario {
 	// Registra en su historial el préstamo de un libro
 	public void registrarPrestamo(Material material) {
 		this.historialPrestamos.add(material);
+	}
+	
+	public void mostrarHistorial() {
+		System.out.println("El historial del usuario " + this.nombre + " es: ");
+		
+		for(Material mat: historialPrestamos) {
+			System.out.print("Titulo " + ": " + mat.getTitulo() + ", ");
+			System.out.print("Autor: " + mat.getAutor() + ", ");
+			System.out.print("Editorial: " + mat.getEditorial() + ", ");
+			System.out.print("Ejemplares: " + mat.getEjemplaresDisponibles() + "\n");
+		}
 	}
 }
