@@ -16,9 +16,7 @@ public class Biblioteca {
 		
 		// Creando objeto libro usando constructor con todos los parámetros
 		Libro libro2 = new Libro("Toda la soledad del centro de la tierra","Luis Jorge Boone", "Alfaguara", 0);
-		
-		
-		
+
 		// Creando historieta - 3 parámetros
 		Historieta hist1 = new Historieta("Superman", "Joe Shuster y Jerry Siegel", "ECC Ediciones");
 		
@@ -61,6 +59,11 @@ public class Biblioteca {
 		
 		user1.mostrarHistorial();
 		
+		
+		Prestamo prestamo = new Prestamo(hist2, user1);
+		
+		
+		prestamo.mostrarPrestamo();
 	}
 	
 	
