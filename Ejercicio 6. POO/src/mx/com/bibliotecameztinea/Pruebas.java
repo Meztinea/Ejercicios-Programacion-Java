@@ -1,18 +1,14 @@
-package com.meztinea.libreria;
+package mx.com.bibliotecameztinea;
 
 import java.time.LocalDateTime;
-import java.util.ArrayList;
 
-public class Biblioteca {
+public class Pruebas {
 
-	public static ArrayList<Material> biblioteca = new ArrayList<>();
-	
-	
 	public static void main(String[] args) {
 		
 		// Creando libro usando constructor con parámetros obligatorios
 		Libro libro1 = new Libro("Epoca de Cerezos", "Laura Baeza", "Paraíso Perdido");
-		libro1.setEjemplaresDisponibles(10);
+		libro1.aumentarEjemplares(10);
 		
 		// Creando objeto libro usando constructor con todos los parámetros
 		Libro libro2 = new Libro("Toda la soledad del centro de la tierra","Luis Jorge Boone", "Alfaguara", 0);
@@ -24,8 +20,9 @@ public class Biblioteca {
 		Historieta hist2 = new Historieta("Batman", "Bob Kane y Bill Finger", "ECC Ediciones", 10);
 		
 		Historieta hist3 = new Historieta("Spiderman", "Stan Lee y Steve Ditko", "Panini Comics");
-		hist3.setEjemplaresDisponibles(5);
+		hist3.aumentarEjemplares(5);
 		
+
 		
 		// Prestando libros e historietas
 		libro1.prestarEjemplar();
@@ -34,20 +31,20 @@ public class Biblioteca {
 		hist3.prestarEjemplar();
 
 		// Agregando libros a la biblioteca
-		biblioteca.add(libro1);
-		biblioteca.add(libro2);
-		biblioteca.add(hist1);
-		biblioteca.add(hist2);
-		biblioteca.add(hist3);
+		Biblioteca.inventario.add(libro1);
+		Biblioteca.inventario.add(libro2);
+		Biblioteca.inventario.add(hist1);
+		Biblioteca.inventario.add(hist2);
+		Biblioteca.inventario.add(hist3);
 		
 		
 		// Mostrando los libros de la biblioteca
-		mostrarMaterial();
+		Biblioteca.mostrarMaterial();
 		
 		
 		// Buscando un material (libro o historieta) en la biblioteca
-		buscarMaterial("María");
-		buscarMaterial("Batman");
+		Biblioteca.buscarMaterial("María");
+		Biblioteca.buscarMaterial("Batman");
 		
 		// Creando usuario
 		Usuario user1 = new Usuario("Jorge", "miemail@gmail.com", LocalDateTime.now());
@@ -64,38 +61,7 @@ public class Biblioteca {
 		
 		
 		prestamo.mostrarPrestamo();
+
 	}
-	
-	
-	public static void mostrarMaterial() {
-		int contador = 1;
-		for(Material mat: biblioteca) {
-			System.out.println("Titulo " + contador + ": " + mat.getTitulo());
-			System.out.println("Autor: " + mat.getAutor());
-			System.out.println("Editorial: " + mat.getEditorial());
-			System.out.println("Ejemplares: " + mat.getEjemplaresDisponibles() + "\n");
-			contador++;
-		}
-	}
-	
-	public static void buscarMaterial(String mat) {
-		boolean encontrado = false;
-		
-		for (Material m: biblioteca) { 
-			
-			if (m.getTitulo().equalsIgnoreCase(mat)) {
-				System.out.println("Elemento encontrado");
-				System.out.println("Titulo: " + m.getTitulo());
-				System.out.println("Autor: " + m.getAutor());
-				System.out.println("Editorial: " + m.getEditorial());
-				System.out.println("Ejemplares: " + m.getEjemplaresDisponibles() + "\n");
-				encontrado = true;
-			}
-			
-		}
-		
-		if (!encontrado) {
-			System.out.println("Elemento no encontrado.");
-		}
-	}
+
 }

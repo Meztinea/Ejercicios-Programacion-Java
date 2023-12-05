@@ -1,4 +1,4 @@
-package com.meztinea.libreria;
+package mx.com.bibliotecameztinea;
 
 public abstract class Material {
 	private final String titulo;
@@ -20,7 +20,6 @@ public abstract class Material {
 		this.ejemplaresDisponibles = 0;
 	}
 	
-	public abstract void prestarEjemplar();
 	
 	public String getTitulo() {
 		return this.titulo;
@@ -38,7 +37,25 @@ public abstract class Material {
 		return this.ejemplaresDisponibles;
 	}
 	
-	public void setEjemplaresDisponibles(int ejemplares) {
-		this.ejemplaresDisponibles = ejemplares;
+	public void aumentarEjemplares(int ejemplares) {
+		this.ejemplaresDisponibles += ejemplares;
+	}
+	
+	public void disminuirEjemplares(int ejemplares) {
+		this.ejemplaresDisponibles -= ejemplares;
+	}
+	
+	public void prestarEjemplar() {
+		if (this.getEjemplaresDisponibles() > 0) {
+			this.disminuirEjemplares(1);
+			System.out.println("Préstamo de Libro exitoso");
+		}
+		else {
+			System.out.println("No hay ejemplares disponibles");
+		}
+	}
+	
+	public void devolverEjemplar() {
+		this.aumentarEjemplares(1);
 	}
 }

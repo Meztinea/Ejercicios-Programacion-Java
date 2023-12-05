@@ -1,4 +1,4 @@
-package com.meztinea.libreria;
+package mx.com.bibliotecameztinea;
 
 import java.time.LocalDateTime;
 import java.util.ArrayList;

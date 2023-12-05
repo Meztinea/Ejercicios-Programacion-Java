@@ -1,4 +1,4 @@
-package com.meztinea.libreria;
+package mx.com.bibliotecameztinea;
 
 public class Historieta extends Material {
 	
@@ -11,17 +11,6 @@ public class Historieta extends Material {
 	// Llamando al constructor de la clase padre con todos los parámetros
 	public Historieta(String titulo, String autor, String editorial, int ejemplares) {
 		super(titulo, autor, editorial, ejemplares);
-	}
-	
-	// Definiendo el método heredado de la clase abstracta
-	public void prestarEjemplar() {
-		if (getEjemplaresDisponibles() > 0) {
-			setEjemplaresDisponibles(getEjemplaresDisponibles() - 1);
-			System.out.println("Préstamo de Historieta exitoso");
-		}
-		else {
-			System.out.println("No hay ejemplares disponibles");
-		}
 	}
 	
 	

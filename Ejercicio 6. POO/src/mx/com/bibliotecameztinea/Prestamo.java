@@ -1,4 +1,4 @@
-package com.meztinea.libreria;
+package mx.com.bibliotecameztinea;
 
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
@@ -9,7 +9,7 @@ public class Prestamo {
 	private final String titulo;
 	private final String autor;
 	private final String editorial;
-	private String usuario;
+	private final String usuario;
 	
 	public Prestamo(Material material, Usuario usuario) {
 		LocalDateTime fecha = LocalDateTime.now();
