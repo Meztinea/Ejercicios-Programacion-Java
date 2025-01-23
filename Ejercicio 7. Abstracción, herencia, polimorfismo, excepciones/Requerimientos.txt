@@ -1,0 +1,10 @@
+Crea un sistema de clases de java en la que pongas en práctica las siguientes
+características de programación orientada a objetos.
+
+- Abstracción
+- Herencia 
+- Polimorfismo
+- Excepciones
+
+El sistema debe contar con por lo menos 5 clases diferentes en las que apliques
+los conocimientos de los temas a tratar. 
