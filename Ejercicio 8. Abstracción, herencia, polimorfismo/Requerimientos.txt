@@ -1,0 +1,48 @@
+
+La universidad “X” cuenta con dos tipos de personal: docentes y administrativos. Ambos tienen 
+características comunes y particularidades.
+
+Personal
+-No. de empleado
+-Apellido paterno
+-Apellido materno
+-Nombre
+-Fecha de nacimiento
+-Fecha de ingreso
+-muestraDatos()
+-calculaImpuestos()
+-calculaPagoNeto()
+
+Docente
+-Mismas características 
+del personal
+-Sueldo base
+-Monto de beca 
+académica
+muestraDatos()
+calculaImpuestos()
+calculaPagoNeto()
+
+
+Administrativo
+-Mismas características 
+del personal
+-Sueldo base
+-Monto de vales de 
+despensa
+muestraDatos()
+calculaImpuestos()
+calculaPagoNeto()
+
+Se desea realizar un programa sencillo para capturar los datos de un empleado, indicar si es 
+docente o administrativo. Calcular la cantidad de impuestos que debe pagar y calcular el pago 
+neto que recibirá.
+
+Dependiendo si es docente el monto sobre el que se calcula los impuestos es la suma de su 
+sueldo base más el monto de su beca académica; y si es administrativo es el sueldo base más el 
+monto de sus vales de despensa. Si es docente se le aplica un 15% de impuestos y si es 
+administrativo se le aplica un 12%.
+
+Al final se debe mostrar los datos del empleado, la cantidad de ingresos brutos, impuestos y 
+sueldo neto que recibirá.
+
