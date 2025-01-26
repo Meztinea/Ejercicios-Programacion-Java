@@ -1,0 +1,11 @@
+La agencia de taxis “viajefast” incrementa su flotilla de vehículos, necesitan llevar un 
+mejor control de los vehículos que tienen dados de alta, cuentan entre todos sus taxis con 
+vehículos compactos, sedan, camionetas, entre otros. 
+
+Requieren disponer de información para poder manipularla e identificar los vehículos más 
+antiguos (más de 10 años) para sacarlos de circulación y renovar con modelos más recientes.
+
+Considere que el dueño de la flotilla de taxis “viajefast” tiene la siguiente información: marca, 
+modelo, año, precio, tipo, capacidad, características.
+
+Programa el sistema basándote en el diagrama de clases. 
