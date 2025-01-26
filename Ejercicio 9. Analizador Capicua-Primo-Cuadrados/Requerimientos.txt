@@ -1,0 +1,14 @@
+Mediante el empleo de métodos con retorno de parámetro, elaborar un programa en JAVA que 
+te indique si el número ingresado por el usuario mediante el teclado es CAPICUA, o si es PRIMO, 
+y calcular su producto elevado al cuadrado. Se le sugiere el empleo de un menú sencillo: 
+
+Menú
+1.- Registrar número:
+2.- Es capicúa:
+3.- Es primo:
+4.- Elevado al cuadrado su producto es:
+5.- Salir.
+
+El alumno podrá determinar la estructura de repetición a utilizar, pero los métodos deben ser 
+con retorno de parámetro, además debe usar sentencias de selección simple y múltiple, 
+además que cada opción deberá ocupar un método.
