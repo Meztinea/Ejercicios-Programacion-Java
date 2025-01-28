@@ -1,0 +1,15 @@
+Se requiere realizar el sistema de control de estudiantes de la Universidad, por lo que a usted lo 
+han elegido para validar los datos de registro de cada estudiante, deberá colocar las excepciones
+necesarias para dicha actividad (puede utilizar de la colección del API de Java o bien puede 
+generar sus propias excepciones), las validaciones son las siguientes:
+
+a. El nombre del estudiante sólo deberá aceptar caracteres alfabéticos y NO números
+
+b. La fecha de nacimiento deberá estar integrada por tres valores:
+	• Día, sólo aceptará números
+	• Mes, Solo aceptará letras SIN espacio en blanco
+	• Año, sólo aceptará números
+
+c. Calcular el promedio de educación media superior, ésta se calculará ingresando la 
+calificación de sus materias entre la cantidad de materias ingresadas, deberá validar que 
+el tipo de dato sea numérico y que no se ingrese un valor vacío.”
