@@ -1,0 +1,50 @@
+Una casa de cambio de criptomonedas necesita registrar las operaciones de compra y venta de 
+los usuarios de su plataforma, por lo que para llevar a cabo esta tarea almacenará la información 
+relevante de las transacciones, los campos a guardar son:
+
+Nombre 					Tipo de dato 			Posibles Valores		Observaciones
+Id de transacción 			Numérico 			1,2,3…n.			Contador de transacciones.
+Criptomoneda 				Cadena 				BTC, ETH, XRP, DOGE.		Posibles monedas a operar.
+Tipo de transacción 			Cadena 				Compra, Venta. 			Operación a realizar.
+Cantidad de criptomoneda 		Numérico 			1,2,3…n.			
+Tipo de cambio en dólares 		Numérico con decimales 		N > 0.00 			Valor de la criptomoneda en dólares.
+Monto de compra o venta en dólares 	Numérico con decimales 		N > 0.00	
+Comisión 				Numérico con decimales 		N > 0.00 			Monto cobrado por operar.
+Valor real de venta o compra		Numérico con decimales 		N > 0.00 			Monto después de comisiones.
+
+
+Los campos: Criptomoneda, Tipo de transacción, Cantidad de criptomoneda deberán ser 
+solicitados al usuario, los demás campos deberán ser llenados como a continuación se describe:
+
+El id de transacción es un número consecutivo que representa el orden en el cual fueron 
+insertadas las transacciones.
+
+Para almacenar el tipo de cambio en dólares usar los siguientes valores dependiendo de la 
+criptomoneda a operar:
+
+BTC -> 59,000.00
+ETH -> 3,923.08
+XRP -> 1.5597
+DOGE -> 0.7021
+
+El monto de compra o venta se debe calcular con la cantidad de criptomoneda multiplicada por 
+el tipo de cambio.
+
+La comisión se debe calcular en base a la siguiente condición: “Si la compra o venta es menor 
+a 1,000 dólares la comisión es de 5% de lo contrario la comisión es 1%, sobre el monto de 
+compra o venta”.
+
+Y finalmente, el valor real de venta o compra se calcula después de restar al monto de 
+compra o venta la comisión calculada.
+
+El programa puede solicitar el número de transacciones a almacenar o simplemente ir registrando 
+las operaciones que el usuario desee, para esta tarea se propone la creación de un menú con las 
+siguientes opciones:
+
+1. Registro de transacción.
+2. Impresión del registro por Id de transacción.
+3. Impresión de toda la lista de transacciones. 
+4. Salir.
+
+
+
