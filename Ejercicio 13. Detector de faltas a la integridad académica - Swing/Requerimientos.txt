@@ -1,0 +1,13 @@
+Un equipo de docentes de programación realiza un sistema informático para detectar posibles 
+faltas a la integridad académica con respecto a los trabajos realizados por los estudiantes, 
+también se pretende que sea una herramienta tecnológica de consulta para los universitarios y 
+puedan resolver cualquier duda que tenga con las actividades y evitar faltas a integridad 
+académica en sus actividades.
+
+
+a. La interfaz gráfica debe contener:
+
+• Menú principal.
+• Menú colgante y cuatros submenús 
+• Formulario con (Label y TextField) 
+• Tres botones (guardar, eliminar, editar)
