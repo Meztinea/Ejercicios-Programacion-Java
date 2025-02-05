@@ -1,0 +1,9 @@
+Realiza una GUI para que una empresa de cultivo de flroes pueda
+ - registrar horticultores
+ - registrar flores 
+ - registrar segmentaciones
+
+Utiliza menús para navegar entre pantallas y crea un formulario con 
+Folio
+Segmentacion
+Botones guardar y salir.
