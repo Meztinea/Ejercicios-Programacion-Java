@@ -1,0 +1,4 @@
+Crea un sistema con Interfaz Gráfica para que los usuarios de una pasteleria
+puedan registrar a sus clientes, sus productos y sus ventas.
+
+Utiliza diferentes pantallas, menús y botones.
