@@ -1,0 +1,15 @@
+Una pizzeria necesita registrar los pedidos que les realizan sus clientes
+y te han contratado para crear un formulario en el que puedan registrar 
+los siguientes datos:
+
+- Promociones por paquete 
+- Precio
+- Fecha
+- Domicilio
+- Correo electrónico
+- Teléfono
+
+Complementa tu formulario incluyendo los botones 
+- Enviar
+- Imprimir
+- Salir 
