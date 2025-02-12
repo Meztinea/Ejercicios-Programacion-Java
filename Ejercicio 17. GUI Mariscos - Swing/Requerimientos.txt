@@ -1,0 +1,7 @@
+Un emprendedor acaba de abrir su negocio de mariscos y te ha
+contratado para crear un sistema que cuente con GUI para
+manejarlo fácilmente. Además, desea que la información pueda
+persistir en una base de datos
+
+- Crea un formulario para registrar ventas
+- Crea un formulario para poder eleminiar las ventas
